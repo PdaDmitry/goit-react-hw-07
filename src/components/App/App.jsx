@@ -26,7 +26,7 @@ export default function App() {
       <SearchBox />
       {loading && <Loader />}
       {error && <ErrorMessage />}
-      <ContactList />
+      {!error && <ContactList />}
     </div>
   );
 }
